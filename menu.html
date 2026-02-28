@@ -1,0 +1,537 @@
+<html>
+<head>
+<title>Menu</title>
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="./ext.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
+		
+<style>
+.menulist{
+margin-top:0px;
+font-size:20px;
+font-family:bold;
+}
+aside{
+
+border:2px solid;
+color:black;
+position:fixed;
+left:0%;
+top:0%;
+width:13%;
+height:100%;
+margin-top:82px;
+z-index:1;
+}
+.varities{
+margin-top:90px;
+border:3px solid;
+margin-left:15%;
+margin-right:2%;
+margin-bottom:0%;
+height:auto;
+padding:10px 10px 10px 10px;
+
+position:relative;
+
+}
+.varities::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sitem{
+float:left;
+width:22%;
+height:auto;
+margin-right:10%;
+margin-bottom:60px;
+}
+.sitem img {
+    width: 100% ;
+    height: auto;
+    
+}
+
+
+@media screen and (max-width:768px){
+aside{
+position: relative;
+width: 100%;
+height:auto;
+margin-top: 0;
+border: none;
+z-index: 1;
+
+}
+.varities {
+margin-left: 0;
+margin-right: 0;
+margin-top: 20px;
+border: none;
+padding: 5px;
+    }
+.sitem{
+width:100%;
+height:auto;
+margin-bottom:30px;
+float:none;
+}
+.sitem img {
+width: 100% ;
+height: auto;
+}
+
+}
+.foot1{
+
+position:sticky;
+left:0%;
+top:1000px;
+z-index:2;	
+}
+
+
+</style>
+</head>
+<body>
+		<header>
+		<div class="container-fluid bg-secondary navbar-dark pos">
+			<div class="row " >
+			<div class="col-md-3" >
+			 <img src="./img/logo.jpeg" alt="logo" class="imgs" >
+			</div>
+			<div class="col-md-7" >
+					<nav class="navbar navbar-expand-sm  ">
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="navbar-nav txtsize" >
+						<li class= "nav-item"><a href="./main.html" class="nav-link text-light">Home</a></li>
+						<li class="nav-item"><a href="#Menu" class="nav-link text-light">Menu</a></li>
+						<li class="nav-item"><a href="./restaurant.html" class="nav-link text-light">Restaurants</a></li>
+						<li class="nav-item"><a href="./offers.html" class="nav-link text-light">Offers</a></li>
+						<li class="nav-item"><a href="./gallery.html" class="nav-link text-light">Gallery</a></li>
+						</ul>
+						</div>
+					</nav>
+			</div>
+			<div class="col-md-2" >
+				<nav class="navbar navbar-expand-sm  ">
+					<ul class="navbar-nav txtsize" >
+						<li class="nav-item"><a href="#cart" class="nav-link text-light" ><span class="bi bi-cart"></span> cart</a></li>
+						<li class="nav-item"><a href="#profile" class="nav-link text-light" ><span class="bi bi-person-fill"></span> profile</a></li>
+					</ul>
+				</nav>
+			</div>
+			</div> 
+		</div>
+		</header>
+		
+		
+		
+		
+		<section>
+		<aside class="bg-secondary">
+		<h3 style="padding:10px 0px 0px 20px;">Menu</h3>
+		
+				    <nav class="navbar menulist ">
+						<ul class="navbar-nav " >
+						<li class= "nav-item"><a href="#vegstarters" class="nav-link text-light">veg starters</a></li>
+						<li class= "nav-item"><a href="#vegcurries" class="nav-link text-light">veg curries</a></li>
+						<li class= "nav-item"><a href="#vegbiryani" class="nav-link text-light">veg biryani</a></li>
+						<li class="nav-item"><a href="#Non-vegstarters" class="nav-link text-light">Non-veg starters</a></li>
+						<li class="nav-item"><a href="#Non-vegcurries" class="nav-link text-light">Non-veg curries</a></li>
+						<li class="nav-item"><a href="#Non-vegbiryani" class="nav-link text-light">Non-veg biryani</a></li>
+						<li class="nav-item"><a href="#Breads" class="nav-link text-light">Breads</a></li>
+						<li class="nav-item"><a href="#Desserts" class="nav-link text-light">Desserts</a></li>
+						<li class="nav-item"><a href="#Beverages" class="nav-link text-light">Beverages</a></li>
+						</ul>
+					</nav>
+		
+		</aside>
+		</section>
+
+		<section>
+		<div class="varities">
+		<div id="vegstarters">
+		<h3>veg starters</h3>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/hara bhara kabab.jpg" alt="hara bhara kabab "  >
+						</div>
+						<div class="card-footer "  >
+						<p >Hara bhara kabab</p>
+						<p style="float:left; padding-right:120px;">Rs.199</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/manchuria.jpg" alt="manchuria "  >
+						</div>
+						<div class="card-footer "  >
+						<p>Manchuria </p>
+						<p style="float:left; padding-right:120px;">Rs.149</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/paneer tikka.jpg" alt="paneer tikka"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Paneer tikka</p>
+						<p style="float:left; padding-right:120px;">Rs.229</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		
+		
+		<div id="vegcurries">
+		<h3>vegcurries</h3>
+		
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/palak paneer.jpg" alt="palak paneer"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Palak paneer </p>
+						<p style="float:left; padding-right:120px;">Rs.229</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/aloo gobi.jpg" alt="aloo gobi"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Aloo gobi</p>
+						<p style="float:left; padding-right:120px;">Rs.199</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/chana masala.jpg" alt="chana masala"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Chana masala</p>
+						<p style="float:left; padding-right:120px;">Rs.199</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		<div id="vegbiryani">
+		
+		
+		<h3>vegbiryani</h3>
+		
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/vegbiryani.jpg" alt="vegbiryani"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Vegbiryani</p>
+						<p style="float:left; padding-right:120px;">Rs.159</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/paneer biryani.jpg" alt="paneer biryani"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Paneer biryani</p>
+						<p style="float:left; padding-right:120px;">Rs.199</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/veg/mushroom biryani.jpg" alt="mushroom biryani"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Mushroom biryani</p>
+						<p style="float:left; padding-right:120px;">Rs.149</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		<div id="Non-vegstarters">
+		<h3>Non-veg starters</h3>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/chicken tikka.jpg" alt="chicken tikka"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Chicken tikka</p>
+						<p style="float:left; padding-right:120px;">Rs.229</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/fish fry.jpg" alt="fish fry"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Fish fry</p>
+						<p style="float:left; padding-right:120px;">Rs.229</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/mutton seekh kebab.jpg" alt="mutton seekh kebab"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Mutton seekh kebab</p>
+						<p style="float:left; padding-right:120px;">Rs.259</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		<div id="Non-vegcurries">
+		
+		<h3>Non-vegcurries</h3>
+		
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/butterchicken.jpg" alt="butterchicken"  >
+						</div>
+						<div class="card-footer  "  >
+						<p > Butterchicken</p>
+						<p style="float:left; padding-right:120px;">Rs.229</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/fish curry.jpg" alt="fish curry"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Fish curry</p>
+						<p style="float:left; padding-right:120px;">Rs.229</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/Lamb Rogan Josh.jpg" alt="Lamb Rogan Josh"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Lamb Rogan Josh</p>
+						<p style="float:left; padding-right:120px;">Rs.259</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		<div id="Non-vegbiryani">
+		
+		<h3>Non-vegbiryani</h3>
+		
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/chicken biryani.jpg" alt="chicken biryani"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Chicken biryani</p>
+						<p style="float:left; padding-right:120px;">Rs.179</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/nalli.jpg" alt="nalli ghost biryani"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Nalli ghost biryani</p>
+						<p style="float:left; padding-right:120px;">Rs.299</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/non-veg/prawns biryani.jpg" alt="prawns biryani"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Prawns biryani</p>
+						<p style="float:left; padding-right:120px;">Rs.229</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		<div id="Breads">
+		<h3>Breads</h3>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/butter naan.jpg" alt="butter naan"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Butter naan</p>
+						<p style="float:left; padding-right:120px;">Rs.79</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/chapati.jpg" alt="chapati"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Chapati</p>
+						<p style="float:left; padding-right:120px;">Rs.49</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/paratha.jpg" alt="paratha"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Paratha </p>
+						<p style="float:left; padding-right:120px;">Rs.59</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		<div id="Desserts">
+		
+		<h3>Desserts</h3>
+		
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/desserts/gulabjamun.jpg" alt="gulabjamun"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Gulabjamun</p>
+						<p style="float:left; padding-right:120px;">Rs.49</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/desserts/jalebi.jpg" alt="jalebi"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Jalebi</p>
+						<p style="float:left; padding-right:120px;">Rs.49</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/desserts/rasmalai.jpg" alt="rasmalai"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Rasmalai</p>
+						<p style="float:left; padding-right:120px;">Rs.49</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		
+		<div id="Beverages">
+		
+		<h3>Beverages</h3>
+		
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/beverages/hotchocolate.jpg" alt="hotchocolate"  >
+						</div>
+						<div class="card-footer "  >
+						<p >Hotchocolate</p>
+						<p style="float:left; padding-right:120px;">Rs.129</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/beverages/smoothie.jpg" alt="smoothie"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Smoothie</p>
+						<p style="float:left; padding-right:120px;">Rs.119</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		<div class="card sitem">
+						<div class="card-body"  >
+						<img src="./img/food/beverages/softdrink.jpg" alt="softdrink"  >
+						</div>
+						<div class="card-footer  "  >
+						<p >Softdrink</p>
+						<p style="float:left; padding-right:120px;">Rs.49</p>
+						<button type="button" class="btn btn-info" >Add</button>
+						</div>
+		</div>
+		</div>
+		</div>
+		
+		
+		</section>
+		
+
+
+		
+		<footer>
+		
+			<div class="container-fluid bg-secondary foot foot1">
+				<div class="row">
+					<div class="col-md-3">
+						<img src="./img/logo.jpeg" alt="logo" style="width:80px; height:80px; padding:10px 5px 5px 5px"  >	
+					</div>
+					<div class="col-md-3">
+					<h3>About us</h3>
+					<ul>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Our values</a></li>
+						<li><a href="#">locations</a></li>
+						<li><a href="#">Investors</a></li>
+					</ul>
+					</div>
+				
+			
+			
+					<div class="col-md-3">
+					<ul>
+					<h3>Trending </h3>
+						<li><a href="#">What's new</a></li>
+						<li><a href="#">Gift cards</a></li>
+						<li><a href="#">coupons</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+					</div>
+				
+			
+					<div class="col-md-3">
+					<ul>
+					<h3>Help </h3>
+						<li><a href="#">Fundraising</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">FAQ's</a></li>
+						
+					</ul>
+					</div>
+				</div>
+			</div>
+		
+		</footer>
+		
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+		AOS.init({duration:1000});
+		</script>
+		
+</body>
+</html>

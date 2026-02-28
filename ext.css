@@ -1,0 +1,51 @@
+
+.pos{
+	border-radius:20px 20px 20px 20px;
+	border:1px solid;
+	position:fixed;
+	width:100%;
+	top:0px;
+	left:0px;
+	z-index:100;
+	}
+	@media screen and (max-width:768px){
+	.pos{
+	
+	position:static;
+	
+	}
+	}
+	
+	.imgs{
+		padding-top:10px;
+		padding-bottom:10px;
+		width:80px; 
+		height:80px;
+	}
+	.txtsize{
+	font-size:20px;
+	}
+	
+	.foot{
+padding:20px 0px 20px 0px;
+  width:100%;
+  border:1px solid;
+
+  color:white;
+}
+.foot a {
+    color: white ;
+}
+.foot a:hover {
+    color: black; 
+    text-decoration: underline;
+}
+.con{
+border:2px solid;
+border-radius:10px 10px 10px 10px;
+position:fixed;
+right:2%;
+bottom:3%
+}	
+	
+	

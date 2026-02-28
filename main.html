@@ -1,0 +1,363 @@
+<html>
+	<head>
+		<title> Eat & Chill</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
+	
+	<style>
+	.pos{
+	border-radius:20px 20px 20px 20px;
+	border:1px solid;
+	position:fixed;
+	width:100%;
+	top:0px;
+	left:0px;
+	z-index:1;
+	}
+	@media screen and (max-width:768px){
+	.pos{
+	
+	position:static;
+	
+	}
+	}
+	.imgs{
+		padding-top:10px;
+		padding-bottom:10px;
+		width:80px; 
+		height:80px;
+	}
+	
+	.next{
+	margin-top:100px;
+	text-align:center;
+	}
+	@media screen and (max-width:768px){
+	.next{
+	margin-top:40px;
+	}
+	}
+	
+	.txtsize{
+	font-size:20px;
+	}
+	.imghero{
+	margin-top:30px;
+	width:80%;
+	height:60%;
+	border-radius: 20px;
+	margin-left:10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("./img/view.png");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+	}
+	
+	
+	.texthero{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	}
+	.res{
+	margin-top:40px;
+	margin-bottom:40px;
+	}
+	.card-body{
+	height:220px;
+	}
+	.fit{
+	width:100%;
+	height:100%;
+	}
+	.fit:hover{
+	transform:scale(113%,120%);
+	
+	}
+	
+	.off{
+	
+	width:90%;
+	height:70%;	
+	margin-top:30px;
+	margin-left:5%;
+	background-color:rgb(108, 117, 125);
+	border-radius:20px;
+	}
+	
+	@media screen and (min-width:768px){
+	.off{
+	float:left;
+	width:35%;
+	height:60%;	
+	margin-top:30px;
+	margin-left:10%;
+	background-color:rgb(108, 117, 125);
+	border-radius:20px;
+	position:relative;
+	}
+	}
+	.off img{
+	width:100%;
+	height:100%;
+	border-radius:20px;
+	}
+	 h1,h2,p{
+	color:white;
+	}
+	footer {
+  clear: both;
+  padding: 20px ;
+}
+.foot{
+padding:20px 0px 20px 0px;
+  width:100%;
+  border:1px solid;
+  
+  color:white;
+}
+.foot a {
+    color: white ;
+}
+.foot a:hover {
+    color: black; 
+    text-decoration: underline;
+}
+.con{
+border:2px solid;
+border-radius:10px 10px 10px 10px;
+position:fixed;
+right:2%;
+bottom:3%
+}
+.loc{
+margin:3% 30% 3% 20%;
+border-radius:50px 10px 50px 10px;
+border:2px solid;
+padding:20px 10px 10px 40px;
+font-size:20px;
+
+}
+@media screen and (max-width:768px){
+.loc{
+margin:3% 3% 2% 3%;
+}
+}
+.ani{
+font-size:30px;
+position:absolute;
+color:rgb(225, 240, 238);
+background-color:rgb(91, 128, 92);
+animation-name:myani;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-direction: reverse;
+animation-timing-function: linear;
+}
+@keyframes myani{
+0% {left:0%;}
+50% {left:65%;}
+100% {left:0%;}
+}
+@media screen and (max-width:376px){
+@keyframes myani{
+0% {left:10%;}
+50% {left:35%;}
+100% {left:10%;}
+}
+}	
+@media screen and (min-width: 377px) and (max-width:767px){
+@keyframes myani{
+0% {left:10%;}
+50% {left:40%;}
+100% {left:10%;}
+}
+}
+	
+	
+	</style>
+	
+	</head>
+	<body class="half bg-light">
+		<header>
+		<div class="container-fluid bg-secondary navbar-dark pos">
+			<div class="row " >
+			<div class="col-md-3" >
+			 <img src="./img/logo.jpeg" alt="logo" class="imgs" >
+			</div>
+			<div class="col-md-7" >
+					<nav class="navbar navbar-expand-sm  ">
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="navbar-nav txtsize" >
+						<li class= "nav-item"><a href="#Home" class="nav-link text-light">Home</a></li>
+						<li class="nav-item"><a href="./menu.html" class="nav-link text-light">Menu</a></li>
+						<li class="nav-item"><a href="./restaurant.html" class="nav-link text-light">Restaurants</a></li>
+						<li class="nav-item"><a href="./Offers.html" class="nav-link text-light">Offers</a></li>
+						<li class="nav-item"><a href="./gallery.html" class="nav-link text-light">Gallery</a></li>
+						
+						</ul>
+						</div>
+					</nav>
+			</div>
+			<div class="col-md-2" >
+				<nav class="navbar navbar-expand-sm  ">
+					<ul class="navbar-nav txtsize" >
+						<li class="nav-item"><a href="#cart" class="nav-link text-light" ><span class="bi bi-cart"></span> cart</a></li>
+						<li class="nav-item"><a href="#profile" class="nav-link text-light" ><span class="bi bi-person-fill"></span> profile</a></li>
+					</ul>
+				</nav>
+			</div>
+			</div> 
+		</div>
+		</header>
+		<div class="next" data-aos="fade-up">
+		
+			<h3>Sea-Side Dine in welcomes you</h3>
+			<h5>Celebration never ends here</h5>
+		</div>
+		<div class="imghero">
+		<div class="texthero">
+		<p>Experience unforgettable seaside dining</p>	
+		</div>
+		</div>
+		
+		<div class="loc bg-light">
+		<label for class="add">Select the location </label>
+		<select name="add" id="add">
+		<option value=""disabled selected >Select location</option>
+		<option value="kerala">Kerala</option>
+		<option value="Goa">Goa</option>
+		<option value="pondicherry">Pondicherry</option>
+		<option value="lakshadweep">Lakshadweep</option>
+		<option value="maldives">Maldives</option>
+		</select>
+		<button type="button" class ="btn btn-info" style="margin-left:30%; border-radius:10px" >Submit</button>
+		</div>
+		
+		<div class="container res">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body"  >
+						<img src="./img/reserve.png" alt="reserve here"  class="fit">
+						</div>
+						<div class="card-footer"  data-aos="zoom-in";>
+						<button type="button" class="btn btn-info">Reserve</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body "  >
+						<img src="./img/takeaway.jpg" alt="takeaway" class="fit">
+						</div>
+						<div class="card-footer"  data-aos="zoom-in";>
+						<button type="button" class="btn btn-info">Takeaway</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body"  >
+						<img src="./img/catering.jpg" alt="catering" class="fit">
+						</div>
+						<div class="card-footer"  data-aos="zoom-in";>
+						<button type="button" class="btn btn-info">Catering</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div  >
+		
+		 <button type="button" class="btn btn-secondary con" data-aos="fade-left" style="padding:10px 10px 10px 10px" ><span class="bi bi-question-circle" style="padding-right:5px"></span>contact</button>
+		 
+		</div>
+			<h3 style="padding-left:10%";>Our offerings</h3>
+		<div class="off">
+			<img src="./img/entrance.png" alt="img1" >
+		</div>
+		<div class="off">
+		
+			<h1 style="padding:5% 0% 0% 10% " >It's your special day !!</h1>
+			<p style="padding:5% 10% 0% 8% ; font-size:170%">Dine out with 10 people
+			and pay for 9 people</p>
+			<h2 style="padding:10% 20% 0% 25%"> Enjoy your meal<h2>
+			<button type="button" class="btn btn-info" style="margin-left:35%">claim the offer</button>
+		</div>
+		<div class="off">
+			<p style="padding:20% 10% 20% 10%; font-size:170%">We are back with the barbeque set-up. Ready to grab it. Comming soon !!!!! Can't wait to host you.</p>
+			<p class="ani">coming soon</p>
+		</div>
+		<div class="off">
+			<img src="./img/bbq.jpg" alt="img2">
+		</div>
+		
+	
+		
+		<footer>
+		
+			<div class="container-fluid bg-secondary foot">
+				<div class="row">
+					<div class="col-md-3">
+						<img src="./img/logo.jpeg" alt="logo" style="width:80px; height:80px; padding:10px 5px 5px 5px"  >	
+					</div>
+					<div class="col-md-3">
+					<h3>About us</h3>
+					<ul>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Our values</a></li>
+						<li><a href="#">locations</a></li>
+						<li><a href="#">Investors</a></li>
+					</ul>
+					</div>
+				
+			
+			
+					<div class="col-md-3">
+					<ul>
+					<h3>Trending </h3>
+						<li><a href="#">What's new</a></li>
+						<li><a href="#">Gift cards</a></li>
+						<li><a href="#">coupons</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+					</div>
+				
+			
+					<div class="col-md-3">
+					<ul>
+					<h3>Help </h3>
+						<li><a href="#">Fundraising</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">FAQ's</a></li>
+						
+					</ul>
+					</div>
+				</div>
+			</div>
+		
+		</footer>
+		
+		
+		
+		
+		
+		
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+		AOS.init({duration:1000});
+		</script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
